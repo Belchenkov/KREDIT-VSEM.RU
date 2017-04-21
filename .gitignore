@@ -1,2 +1,8 @@
+/node_modules/
+/dist/
+/.git/
+/app/css/
+/**/*.psd
+/**/Thumbs.db
 .idea
-/node_modules
+debug.log
