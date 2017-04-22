@@ -23,7 +23,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="row">
             <div class="col-md-4 logo col-lg-4 logo">
@@ -36,21 +35,114 @@
         </div>
     </header>
 
-    <main>
+    <section id="banner">
+        <div class="row">
+            <div class="banner-header col-lg-12 col-md-12">
+                <div class="col-md-3 col-lg-3 col-lg-push-1"><i class="banner-header-icon-1"></i><span>выдаем кредит <br> по всей РФ</span></div>
+                <div class="col-md-3 col-lg-3 col-lg-push-1"><i class="banner-header-icon-2"></i><span>85% положительных решений о выдаче</span></div>
+                <div class="col-md-3 col-lg-3 col-lg-push-2"><i class="banner-header-icon-3"></i><span>одобрение кредита всего за 1 час</span></div>
+            </div>
+        </div><!-- /. row-->
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-12 our-contacts">
-                    <h2>Наши контакты:</h2>
-                    <p class="bold">ООО "Кредитный брокер"</p>
-                    <p>Юридический адрес: г. Люберцы, 3-е почтовое отделение 59-а, офис 211</p>
-                    <p>Фактический адрес: г. Люберцы, 3-е почтовое отделение 59-а, офис 211</p>
-                    <p>Телефон: 8 (926) 208-04-76</p>
+                <div class="col-lg-3 col-md-3">
+                    <ul class="banner-list">
+                        <li><i class="banner-header-icon"></i>Сумма до 3 000 000 рублей </li>
+                        <li><i class="banner-header-icon"></i>Кредит только по паспорту без справок и поручителей до 500 000 рублей</li>
+                        <li><i class="banner-header-icon"></i>От 18 лет</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </main>
+                <div class="col-lg-9 col-md-9 form-box">
+                    <h1 class="form-header">время получить кредит</h1>
+                    <p class="form-desc">Заполните анкету за 5 минут и уже сегодня получите деньги</p>
 
-    <footer class="bd-top-white">
+                    <form action="#" method="post" class="form">
+                        <div class="row">
+                            <label for="sum-credit">Сумма кредита:</label><br>
+                            <input type="number" id="sum-credit" placeholder="10 000" min="0" />
+                        </div>
+                        <div class="row">
+                            <label for="fio">Ф.И.О. (Полностью):</label><br>
+                            <input type="text" id="fio" placeholder="Иванов Иван Иванович"  />
+                        </div>
+                        <div class="row">
+                            <label>Дата рождения:</label><br>
+                            <select name="birthday-day">
+                                <option value="0">Число</option>
+                            </select>
+                            <select name="birthday-month">
+                                <option value="0">Месяц</option>
+                            </select>
+                            <select name="birthday-month">
+                                <option value="0">Год</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="phone">Телефон:</label><br>
+                            <input type="text" id="phone" placeholder="+7()" />
+                        </div>
+                        <div class="row">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" placeholder="ivanov@mail.ru" />
+                        </div>
+                        <div class="row">
+                            <label for="job">Трудоустройство:</label><br>
+                            <input type="text" id="job" placeholder="Гослужащий" />
+                        </div>
+                        <div class="row">
+                            <label for="credit-history">Кредитная история:</label><br>
+                            <input type="text" id="credit-history" placeholder="Кредиты закрыты, просрочек не было" />
+                        </div>
+                        <div class="row">
+                            <label for="location">Кредитная история:</label><br>
+                            <select id="location" name="location">
+                                <option value="0">Регион</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" name="check-agree">
+                            <p>Я даю свое согласие на обработку моих персональных данных <a href="#">(подробнее)</a></p>
+                        </div>
+                        <button type="submit" class="button">ОТПРАВИТЬ АНКЕТУ</button>
+                    </form>
+                </div>
+            </div><!-- /. row-->
+        </div><!-- /. container-->
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="services-icon-1 col-lg-6 col-md-6">
+                        <img src="img/services-icon-1.png" alt="оформление кредита онлайн не выходя из дома">
+                        <p class="services-icon-desc">оформление кредита онлайн не выходя из дома</p>
+                    </div>
+                    <div class="services-icon-2 col-lg-6 col-md-6">
+                        <img src="img/services-icon-2.png" alt="Заявка отправляеться в 5 банков">
+                        <p class="services-icon-desc">Заявка отправляеться в 5 банков</p>
+                    </div>
+                </div>
+            </div><!-- /. row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="services-icon-3 col-lg-6 col-md-6">
+                        <img src="img/services-icon-3.png" alt="вам поступят уже одобренные предложения">
+                        <p class="services-icon-desc">вам поступят уже одобренные предложения</p>
+                    </div>
+                    <div class="services-icon-4 col-lg-6 col-md-6 ">
+                        <img src="img/services-icon-4.png" alt="наши услуги для вас бесплатные">
+                        <p class="services-icon-desc">наши услуги для вас бесплатные, за выданный кредит нам платят банки</p>
+                    </div>
+                </div>
+            </div><!-- /. row-->
+            <div class="row">
+                <h2 class="services-bottom">мы помогаем вам:</h2>
+            </div>
+        </div><!-- /.container-->
+    </section>
+
+    <footer class="">
         <div class="row">
             <div class="col-md-12 logo col-lg-12 logo">
                 <a href="/"><img src="img/LOGO.png" alt="Оформление кредита онлайн по РФ" title="KREDIT-VSEM.RU"><span>vsem.ru</span></a>
