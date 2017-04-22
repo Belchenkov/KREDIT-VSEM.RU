@@ -131,13 +131,93 @@ section#services
   background-size: cover
   text-align: center
   padding-top: 140px
+  .row
+    margin-bottom: 20px
+  & .services-icon-desc
+    font-family: $myriadBold
+    font-size: 30px
+    text-transform: uppercase
+  h2.services-bottom
+    margin-top: 180px
+    text-transform: uppercase
+    font-family: $myriadBold
+    font-size: 52px
+    margin-bottom: 0
 
-h2.services-bottom
-  margin-top: 140px
-  
+/* === HELP US === */
+.helpUs-box
+  min-height: 180px
+  margin: 0
+  color: #fff
+  background-color: $orange
+  padding-left: 70px
+  &:nth-of-type(1)
+    background-color: $accent
+  h3
+    font-family: $myriadBold
+    font-size: 36px
+    text-transform: uppercase
+
+.helpUs-img
+  padding: 0
+  img
+    width: 100%
+
+#helpUs
+  .write-blank
+    margin: 50px 0 70px
+  .button
+    font-family: 'MyriadPro-BoldCond', sans-serif
+    font-size: 60px
+    text-align: center
+    padding: 20px
+    border-bottom: 8px solid #35551f
+    transition: background-color .3s ease
+  .button:hover
+    transition: background-color .3s ease
+    background-color: #69bb22
+
 /* === CONDITIONS === */
 #conditions
   background-color: #e7edf3
+  min-height: 900px
+  padding: 105px 0
+  .col-md-4.col-lg-4
+    min-height: 420px
+    background-color: #ffffff
+    border: 1px solid #ccd5df
+    border-radius: 3px
+    text-align: center
+    margin-bottom: 75px
+    h3
+      font-size: 30px
+      text-transform: uppercase
+      color: #818b95
+      font-weight: normal
+      border-bottom: 1px solid #ccd5df
+      padding-bottom: 50px
+    p
+      font-size: 18px
+      border-bottom: 1px solid #ccd5df
+      padding-bottom: 20px
+  & .conditions-text
+    text-align: center
+    max-width: 890px
+    font-size: 30px
+    margin: 0 auto 50px
+  &  a.button
+    max-width: 615px
+    font-family: 'MyriadPro-BoldCond', sans-serif
+    font-size: 60px
+    text-align: center
+    background-color: $orange
+    border-bottom: 8px solid #94611e
+    padding: 20px 0
+    transition: background-color .3s ease
+  & a.button:hover
+    transition: background-color .3s ease
+    background-color: #ff952d
+
 
 /* === CONDITION GET CREDIT */
 #cond-get-credit
