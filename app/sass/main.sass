@@ -31,13 +31,14 @@ html, body
 	height: 100%
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.3
-	font-family: $default-font
-	overflow-x: hidden
-	opacity: 1
+  color: #000
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.3
+  font-family: $default-font
+  overflow-x: hidden
+  opacity: 1
 
 .img-responsive
 	display: block
@@ -45,13 +46,19 @@ body
 	height: auto
 
 a.button
-	display: block
-	text-decoration: none
-	text-transform: uppercase
-	color: #000
-	background-color: $btn-green
-	border-radius: 5px
-	font-family: MyriadPro-BoldCond, sans-serif
+  display: block
+  text-decoration: none
+  text-transform: uppercase
+  color: #000
+  background-color: $btn-green
+  border-radius: 5px
+  font-family: MyriadPro-BoldCond, sans-serif
+  transition: background-color .3s ease
+
+.button:hover
+    transition: background-color .3s ease
+    background-color: #69bb22
+
 
 // Autor's Styles
 
@@ -63,7 +70,7 @@ header .row
   padding: 10px 0
 
 header .logo
-  margin: 5px 0 0 200px
+  margin: 5px 0 0 0
 
 header .logo-desc
   color: $accent
@@ -79,13 +86,16 @@ header a.button
   line-height: 1.3
 
 section#banner
-  min-height: 1040px
+  min-height: 1430px
   background: $accent url('../img/handWithIphone_cr.png') bottom left no-repeat
   padding-top: 75px
-
+  & .container
+    position: relative
+    .banner-list
+      color: #fff
+      font-size: 34px
 .banner-header
-  margin: 0
-  padding: 0
+  position: relative
   text-align: center
   & div
     color: #fff
@@ -121,8 +131,85 @@ section#banner
       height: 45px
 
 .form-box
+  position: absolute
+  right: 100px
+  top: 200px
   background-color: $orange
-  text-align: center
+  max-width: 740px
+  border-radius: 4px
+  min-height: 1289px
+  .form-header
+    font-family: $myriadBold
+    font-size: 52px
+    text-transform: uppercase
+    text-align: center
+
+  .form-desc
+    font-size: 30px
+    font-family: $default-font
+    text-align: center
+
+  .form
+    .row
+      padding: 0 0 15px 160px
+      label
+        font-size: 18px
+      input
+        width: 412px
+        height: 54px
+        outline: none
+        border-radius: 5px
+        padding-left: 20px
+        padding-top: 5px
+        margin-top: 5px
+        font-size: 18px
+        border: none
+        &[type='checkbox']
+          width: 25px
+          border-radius: 12px
+          border: 0
+          outline: 0
+          float: left
+          background-color: #fff
+
+      span.iAmAgree
+        display: block
+        width: 305px
+        margin: 18px 0 0 40px
+        a
+          border-bottom: 1px solid #867f78
+      input::-webkit-input-placeholder
+        color: $placeholder
+      select
+        width: 105px
+        height: 50px
+        border-radius: 5px
+        border: none
+        margin-top: 5px
+        color: $placeholder
+        text-align: left
+        padding-left: 20px
+        padding-top: 5px
+        & option
+          border-radius: 5px
+          color: #000
+        &#location
+          width: 412px
+          height: 50px
+    input[type='submit']
+      width: 395px
+      padding: 15px 0
+      margin-top: 50px
+      margin-left: 155px
+      background-color: $btn-green
+      border-radius: 5px
+      border: 0
+      font-family: MyriadPro-BoldCond, sans-serif
+      transition: background-color .3s ease
+      font-weight: bold
+      font-size: 42px
+
+
 
 /* === SERVICES === */
 section#services
@@ -247,7 +334,7 @@ footer
     margin: -36px 0 0 115px
     text-transform: uppercase
 
-/* === MAIN CONTACTS === */
+/* === PAGE CONTACTS MAIN=== */
 main
 	background-color: $accent
 	min-height: 600px

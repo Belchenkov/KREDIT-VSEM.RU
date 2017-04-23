@@ -24,26 +24,28 @@
 
 <body>
     <header>
-        <div class="row">
-            <div class="col-md-4 logo col-lg-4 logo">
-                <a href="/"><img src="img/LOGO.png" alt="Оформление кредита онлайн по РФ" title="KREDIT-VSEM.RU"></a>
-                <p class="logo-desc">оформление кредита онлайн по РФ</p>
-            </div>
-            <div class="col-md-5 col-lg-5 button-box">
-                <a href="#" class="button">оформить кредит</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 logo col-lg-7 logo">
+                    <a href="/"><img src="img/LOGO.png" alt="Оформление кредита онлайн по РФ" title="KREDIT-VSEM.RU"></a>
+                    <p class="logo-desc">оформление кредита онлайн по РФ</p>
+                </div>
+                <div class="col-md-4 col-lg-4 button-box">
+                    <a href="#" class="button">оформить кредит</a>
+                </div>
             </div>
         </div>
     </header>
 
     <section id="banner">
-        <div class="row">
-            <div class="banner-header col-lg-12 col-md-12">
-                <div class="col-md-3 col-lg-3 col-lg-push-1"><i class="banner-header-icon-1"></i><span>выдаем кредит <br> по всей РФ</span></div>
-                <div class="col-md-3 col-lg-3 col-lg-push-1"><i class="banner-header-icon-2"></i><span>85% положительных решений о выдаче</span></div>
-                <div class="col-md-3 col-lg-3 col-lg-push-2"><i class="banner-header-icon-3"></i><span>одобрение кредита всего за 1 час</span></div>
-            </div>
-        </div><!-- /. row-->
         <div class="container">
+            <div class="row">
+                <div class="banner-header col-lg-12 col-md-12">
+                    <div class="col-md-3 col-lg-3 col-lg-push-1"><i class="banner-header-icon-1"></i><span>выдаем кредит <br> по всей РФ</span></div>
+                    <div class="col-md-3 col-lg-3 col-lg-push-1"><i class="banner-header-icon-2"></i><span>85% положительных решений о выдаче</span></div>
+                    <div class="col-md-3 col-lg-3 col-lg-push-2"><i class="banner-header-icon-3"></i><span>одобрение кредита всего за 1 час</span></div>
+                </div>
+            </div><!-- /. row-->
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <ul class="banner-list">
@@ -54,7 +56,7 @@
                 </div>
                 <div class="col-lg-9 col-md-9 form-box">
                     <h1 class="form-header">время получить кредит</h1>
-                    <p class="form-desc">Заполните анкету за 5 минут и уже сегодня получите деньги</p>
+                    <p class="form-desc">Заполните анкету за 5 минут <br> и уже сегодня получите деньги</p>
 
                     <form action="#" method="post" class="form">
                         <div class="row">
@@ -97,17 +99,20 @@
                             <label for="location">Кредитная история:</label><br>
                             <select id="location" name="location">
                                 <option value="0">Регион</option>
+                                <option value="1">Регион</option>
+                                <option value="2">Регион</option>
+                                <option value="3">Регион</option>
                             </select>
                         </div>
                         <div class="row">
                             <input type="checkbox" name="check-agree">
-                            <p>Я даю свое согласие на обработку моих персональных данных <a href="#">(подробнее)</a></p>
+                            <span class="iAmAgree">Я даю свое согласие на обработку моих персональных данных <a href="#">(подробнее)</a></span>
                         </div>
-                        <button type="submit" class="button">ОТПРАВИТЬ АНКЕТУ</button>
+                        <input type="submit" class="button" value="ОТПРАВИТЬ АНКЕТУ">
                     </form>
                 </div>
             </div><!-- /. row-->
-        </div><!-- /. container-->
+    </div><!-- /. container-->
     </section>
 
     <section id="services">
