@@ -62,8 +62,14 @@ a.button
 
 // Autor's Styles
 
+.container
+  width: 1200px
+
 /* === HEADER === */
-header
+header,
+.banner-header
+  max-width: 1300px
+  margin: 0 auto
   min-height: 80px
 
 header .row
@@ -85,17 +91,26 @@ header a.button
   float: right
   line-height: 1.3
 
+/* === BANNER === */
 section#banner
-  min-height: 1430px
-  background: $accent url('../img/handWithIphone_cr.png') bottom left no-repeat
+  min-height: 1447px
+  margin: auto
+  background: $accent
   padding-top: 75px
   & .container
     position: relative
     .banner-list
+      min-width: 440px
       color: #fff
-      font-size: 34px
+      font-size: 33px
+      margin: 90px 0 0 -25px
+      & > li
+        margin-bottom: 40px
+    .img-phone
+      position: absolute
+      top: 542px
+      left: -175px
 .banner-header
-  position: relative
   text-align: center
   & div
     color: #fff
@@ -104,11 +119,13 @@ section#banner
     text-align: left
     span
       display: block
-      float: left
       width: 350px
-      margin-left: 15px
-      margin-top: -10px
-      line-height: 1.3
+      float: left
+      padding-left: 20px
+      margin-top: -15px
+      text-transform: uppercase
+    span.first
+      width: 320px
     .banner-header-icon-1
       float: left
       display: block
@@ -117,14 +134,12 @@ section#banner
       height: 48px
     .banner-header-icon-2
       float: left
-      margin-right: 10px
       display: block
       background: url("../img/banner-list-icon-2.png") no-repeat
       width: 42px
       height: 42px
     .banner-header-icon-3
       float: left
-      margin-right: 10px
       display: block
       background: url("../img/banner-list-icon-3.png") no-repeat
       width: 51px
@@ -132,8 +147,8 @@ section#banner
 
 .form-box
   position: absolute
-  right: 100px
-  top: 200px
+  right: 0
+  top: 100px
   background-color: $orange
   max-width: 740px
   border-radius: 4px
@@ -208,8 +223,9 @@ section#banner
       transition: background-color .3s ease
       font-weight: bold
       font-size: 42px
-
-
+    input[type='submit']:hover
+        transition: background-color .3s ease
+        background-color: #69bb22
 
 /* === SERVICES === */
 section#services
@@ -232,18 +248,29 @@ section#services
     margin-bottom: 0
 
 /* === HELP US === */
+#helpUs
+  margin-top: -10px
+  .row
+    margin: 0 auto 5px
 .helpUs-box
-  min-height: 180px
+  min-height: 219px
   margin: 0
   color: #fff
   background-color: $orange
   padding-left: 70px
-  &:nth-of-type(1)
+  .helpUs-box:nth-of-type(0)
+    height: 100px
+  &:nth-of-type(odd)
     background-color: $accent
+    border-right: 5px solid #fff
+
   h3
     font-family: $myriadBold
     font-size: 36px
     text-transform: uppercase
+    margin-bottom: 0
+  p
+    max-width: 435px
 
 .helpUs-img
   padding: 0
@@ -320,6 +347,7 @@ section#services
 footer
   background-color: $accent
   padding: 15px 0 0 0
+  max-height: 85px
   & .footer-logo a
     text-decoration: none
   & .footer-logo p
@@ -334,29 +362,6 @@ footer
     margin: -36px 0 0 115px
     text-transform: uppercase
 
-/* === PAGE CONTACTS MAIN=== */
-main
-	background-color: $accent
-	min-height: 600px
-
-main .container .row
-  margin: auto
-  & .our-contacts
-    color: #fff
-    min-width: 750px
-    margin: 95px 0 0 325px
-  & .our-contacts h2
-    font-size: 33px
-    font-family: $default-font
-  & .our-contacts .bold
-    font-weight: bold
-
-footer.bd-top-white
-  border-top: 4px solid #fff
-  & a
-    display: block
-    margin-bottom: -20px
-
 .footer-link-contacts
   float: right
   display: block
@@ -365,5 +370,25 @@ footer.bd-top-white
   padding: 0
   margin-top: 20px
   font-size: 17px
+
+/* === PAGE CONTACTS MAIN=== */
+main#contactsPage
+  background-color: $accent
+  min-height: 603px
+  border-bottom: 4px solid #fff
+
+main#contactsPage .container
+  margin: auto
+  & .our-contacts
+    color: #fff
+    width: 750px
+    margin: 95px auto 0
+  & .our-contacts h2
+    font-size: 33px
+    font-family: $default-font
+  & .our-contacts .bold
+    font-weight: bold
+
+
 
 @import "media" // Всегда в конце
