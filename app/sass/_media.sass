@@ -3,33 +3,277 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media (min-width : 780px) and (max-width : 992px)
+@media only screen and (max-width : 1350px)
   header
     .logo
       padding-left: 50px
     .button-box
       padding-right: 50px
 
+  .banner-header
+    text-align: center
+    div
+      margin-right: 0
+      span
+        font-size: 24px
+        width: 310px
+      span.first
+        width: 220px
+
+  section#banner
+    min-height: 1433px
+    .container
+      .row
+        ul.banner-list
+          width: 400px
+          margin-left: 30px
+          li
+            font-size: 30px
+  .form-box
+    position: absolute
+    right: 150px
+    top: 100px
+    max-width: 640px
+    min-height: 1320px
+    .form-header
+      font-family: $myriadBold
+      font-size: 42px
+    .form
+      .row
+        padding: 0 0 15px 120px
+      input[type='submit']
+        width: 395px
+        padding: 15px 0
+        margin-top: 50px
+        margin-left: 110px
+
+@media only screen and (max-width : 1200px)
+  section#banner
+    .container
+      .row
+        ul.banner-list
+          width: 320px
+          margin-left: 30px
+          li
+            font-size: 20px
+  .form-box
+    position: absolute
+    right: 330px
+    top: 95px
+    max-width: 600px
+    .form-header
+      font-family: $myriadBold
+      font-size: 36px
+    .form-desc
+      font-size: 26px
+    .form
+      .row
+        padding: 0 0 15px 100px
+      input[type='submit']
+        padding: 15px 0
+        margin-top: 70px
+        margin-left: 90px
+  section#services
+    .container
+      .row
+        margin-left: 30px
+        div
+          width: 400px
+          .services-icon-desc
+            font-size: 26px
+
+@media only screen and (max-width : 1120px)
+  section#banner
+    min-height: 1419px
+  .banner-header
+    text-align: center
+    div
+      margin: 0
+      padding: 0
+      i.banner-header-icon-1,
+      i.banner-header-icon-2,
+      i.banner-header-icon-3
+        margin-top: -15px
+      span
+        font-size: 20px
+        width: 240px
+      span.first
+        width: 190px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  section#banner
+    min-height: 1419px
+    .container
+      .row
+        ul.banner-list
+          width: 320px
+          margin-left: 30px
+          li
+            font-size: 20px
+  .form-box
+    position: absolute
+    right: 430px
+    top: 95px
+    max-width: 500px
+    min-height: 1320px
+    .form-header
+      font-family: $myriadBold
+      font-size: 36px
+    .form-desc
+      font-size: 26px
+    .form
+      .row
+        padding: 0 0 15px 30px
+      input[type='submit']
+        width: 395px
+        padding: 15px 0
+        margin-top: 70px
+        margin-left: 30px
+  .banner-header
+    padding: 0 10px
+    div
+      margin: 0
+      padding: 0
+      i.banner-header-icon-1
+        margin-top: -15px
+      span
+        font-size: 20px
+        width: 240px
+      span.first
+        width: 190px
+  header
+    .logo
+      padding-left: 50px
+    .button-box
+      padding-right: 50px
+
+@media only screen and (max-width : 890px)
+  .banner-header
+    padding: 0 10px
+    div
+      i.banner-header-icon-1
+        margin-top: -15px
+      span
+        font-size: 16px
+        width: 200px
+      span.first
+        width: 150px
+  section#banner
+    min-height: 1419px
+    .container
+      .row
+        .img-phone
+          display: none
+      .form-box
+        position: absolute
+        left: 350px
+        right: 0
+        bottom: 0
+        top: 85px
+        max-width: 450px
+        min-height: 1289px
+  section#services
+    .container
+      .row
+        margin-left: 30px
+        div
+          width: 250px
+          .services-icon-desc
+            font-size: 20px
+
+@media only screen and (max-width : 810px)
+  section#banner
+    .container
+      .row
+      .form-box
+        position: absolute
+        left: 330px
+        right: 0
+        bottom: 0
+        top: 85px
+        background-color: $orange
+        max-width: 450px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
-
+  header
+    .logo
+      padding-left: 30px
+      float: left
+    .button-box
+      padding-right: 20px
+      float: right
+  section#banner
+    div.banner-header
+      div
+        margin: 70px auto 0
+        display: flex
+        align-items: center
+        justify-content: center
+        span
+          font-size: 26px
+          width: 350px
+        span.first
+          width: 350px
+        i.banner-header-icon-1
+          margin-top: -15px
+    section#banner
+      .container
+        .row
+        .form-box
+          position: absolute
+          left: 20px
+          right: 0
+          bottom: 0
+          top: -400px
+          max-width: 550px
+          .form
+            .row
+              padding: 0 0 15px 80px
+            input[type='submit']
+              margin-left: 60px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
-
+@media only screen and (max-width : 650px)
+  header
+    .logo
+      padding-left: 25px
+    .button-box
+      width: 310px
+  header .row .button-box a.button
+    padding: 5px 0
+    min-width: 300px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
+@media (min-width : 300px) and (max-width : 590px)
+  header
+    margin: 0 auto
+    .button-box
+      display: none
+    .logo
+      float: none
+      width: 300px
+      margin: 0 auto
+  section#services
+    background-image: none
+    .container
+      .row
+        div
+          display: block
+          img
+            display: none
+          .services-icon-desc
+            font-size: 18px
+      h2.services-bottom
+        font-size: 28px
+  .our-contacts
+    h2,p
+      width: 315px
+  .our-contacts a.button
+    margin-left: 10px
+  .footer-logo
+    padding: 0
 
 /*==========  Mobile First  ==========*/
 

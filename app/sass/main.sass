@@ -63,28 +63,32 @@ a.button
 // Autor's Styles
 
 .container
-  width: 1200px
+  width: 1300px
 
 /* === HEADER === */
 header,
 .banner-header
   max-width: 1300px
   margin: 0 auto
-  min-height: 80px
 
-header .row
+header
   padding: 10px 0
+  min-height: 80px
 
 header .logo
   margin: 5px 0 0 0
+  float: left
+
+header .button-box
+  float: right
 
 header .logo-desc
   color: $accent
   margin: 5px 0 0 0
 
 header a.button
-  max-width: 340px
-  padding: 5px 20px 0
+  min-width: 330px
+  padding: 5px 6px 0
   text-align: center
   font-weight: bold
   font-size: 42px
@@ -94,13 +98,12 @@ header a.button
 /* === BANNER === */
 section#banner
   min-height: 1447px
-  margin: auto
   background: $accent
   padding-top: 75px
   & .container
     position: relative
     .banner-list
-      min-width: 440px
+      width: 440px
       color: #fff
       font-size: 33px
       margin: 90px 0 0 -25px
@@ -108,15 +111,19 @@ section#banner
         margin-bottom: 40px
     .img-phone
       position: absolute
-      top: 542px
-      left: -175px
+      top: 547px
+      left: -100px
+      z-index: 999
+
 .banner-header
-  text-align: center
   & div
+    padding: 0 10px
+    margin-right: 10px
     color: #fff
     font-family: 'MyriadPro-Bold', sans-serif
     font-size: 30px
     text-align: left
+    display: inline-block
     span
       display: block
       width: 350px
@@ -125,7 +132,7 @@ section#banner
       margin-top: -15px
       text-transform: uppercase
     span.first
-      width: 320px
+      width: 300px
     .banner-header-icon-1
       float: left
       display: block
@@ -144,6 +151,8 @@ section#banner
       background: url("../img/banner-list-icon-3.png") no-repeat
       width: 51px
       height: 45px
+  & div.icon-3
+    margin-right: 0
 
 .form-box
   position: absolute
@@ -232,10 +241,14 @@ section#services
   min-height: 970px
   background: url("../img/bg-services.png") no-repeat
   background-size: cover
-  text-align: center
   padding-top: 140px
   .row
-    margin-bottom: 20px
+    display: table
+    margin: 0 auto 20px
+    div
+      display: table-cell
+      text-align: center
+      width: 536px
   & .services-icon-desc
     font-family: $myriadBold
     font-size: 30px
@@ -314,6 +327,27 @@ section#services
       font-size: 18px
       border-bottom: 1px solid #ccd5df
       padding-bottom: 20px
+  & .conditions-block-middle.col-md-4.col-lg-4
+    margin-top: -30px
+    color: #fff
+    font-size: 30px
+    background-color: #709dca
+    p
+      font-size: 30px
+    p.cond-bottom-p
+      border-bottom: 0
+    i.conditions-icon-1
+      margin: 20px auto
+      background: url('../img/conditions-icon1.png') no-repeat center
+      display: block
+      width: 70px
+      height: 70px
+    i.conditions-icon-2
+      background: url('../img/conditions-icon2.png') no-repeat center
+      margin: 20px auto
+      display: block
+      width: 57px
+      height: 77px
   & .conditions-text
     text-align: center
     max-width: 890px
@@ -377,17 +411,22 @@ main#contactsPage
   min-height: 603px
   border-bottom: 4px solid #fff
 
-main#contactsPage .container
-  margin: auto
-  & .our-contacts
-    color: #fff
-    width: 750px
-    margin: 95px auto 0
-  & .our-contacts h2
+main#contactsPage .our-contacts
+  color: #fff
+  margin: 95px auto 0
+  min-width: 500px
+  h2
     font-size: 33px
     font-family: $default-font
-  & .our-contacts .bold
+  .bold
     font-weight: bold
+  a.button
+    display: block
+    padding: 10px 0
+    width: 250px
+    margin: 80px auto
+    text-align: center
+    font-size: 42px
 
 
 
